@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="ToDo.css">
+    <link rel="icon" href="https://camo.githubusercontent.com/33e1354ddfbca41fd53e6f1c8baaa3fcadf0168f6472d97168d7e8f727c6f7bd/68747470733a2f2f692e696d6775722e636f6d2f785873574c4c472e706e67">
+</head>
+
+<body>
+    <div class='container'>
+        <div class='main-content'>
+            <div class='To-Do-form'>
+                <h3 class='title'>To-Do List</h3>
+                <form id='myForm'>
+                    <input type='text' class='to-do-task-input' id='task' placeholder="Task Name">
+                    <button onclick="addTask()" type = 'submit' class = 'add-button'>ADD</button>
+                </form>
+            </div>
+            <!-- Add this input element above the table -->
+            <div class = 'search-container'>
+                <input type="text" id="searchInput" class="search-bar" placeholder="Search tasks">
+            </div>
+
+
+            <table class='tasks-table'>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Task Name</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id='taskTableBody'></tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src = 'script.js'>
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+.container{
+
+}
+
+.main-content{
+    width: 100%;
+    margin: auto;
+    min-height: 100vh;
+    padding: 5px;
+    background: linear-gradient(to bottom, #19105B, #FF6196);
+    border-radius: 10px;
+    border: 0.2px solid #19105B;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+   text-align: center;
+   color: white;
+   font-weight: 300;
+   margin-top: 1%;
+   position: -webkit-sticky;
+   position: sticky;
+}
+.To-Do-form{
+    text-align: center;
+    position: sticky;
+}
+.to-do-task-input{
+    width: 250px;
+    height: 25px;
+    border: 1px solid #19105B;
+    background-color: #FFE5EE;
+    color: #19105B;
+}
+.to-do-task-input ::placeholder{
+    color: #19105B;
+}
+.add-button{
+    cursor: pointer;
+    width: 77px;
+    height: 29px;
+    border: 1px solid #19105B;
+    background-color: #FFE5EE;
+    color: #19105B;
+    font-weight: bold;
+}
+.tasks-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+}
+.tasks-table tr {
+    background-color: none;
+    color: #ffffff;
+    text-align: center;
+}
+.tasks-table th{
+    padding: 12px 15px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+.tasks-table td {
+    padding: 12px 15px;
+}
+
+.tasks-table tr {
+    border-bottom: 1px solid #FFE5EE;
+}
+.check-box::before{
+    color: #19105B;
+    
+}
+.check-box::after{
+    color: #FF6196;
+}
+.delete-button{
+    cursor: pointer;
+    width: 65px;
+    height: 25px;
+    border: 1px solid #19105B;
+    background-color: #FFE5EE;
+    color: #19105B;
+    font-weight: bold;
+    border-radius: 2px;
+}
+.delete-button:hover{
+    cursor: pointer;
+    width: 65px;
+    border: 1px solid #FFE5EE;
+    background-color: #19105B;
+    color: #FFE5EE;
+    font-weight: bold;
+    border-radius: 2px;
+    font-size: small;
+    height: 25px;
+}
+.completed-task {
+    text-decoration: line-through;
+}
+.completed-task span.a{
+    color: white;
+}
+.search-bar{
+    width:150px;
+    height: 20px;
+    border: 1px solid #19105B;
+    background-color: #FFE5EE;
+    color: #19105B;
+}
+.search-container{
+    display: flex;
+    justify-content: flex-end;  
+    margin-bottom: 0%;
+}
